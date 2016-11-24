@@ -1,0 +1,34 @@
+.about-me {
+  margin: 80px auto 0 auto;
+  font-size: 1em;
+  max-width: 768px;
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.footer {
+  color: #fff;
+  background-color: #222;
+  text-align: center;
+}
+.footer p {
+  margin: auto;
+}
+
+.footer a {
+  color: #999;
+}
+
+.hr-title {
+  border-top: solid 3px #49addf;
+  width: 20%;
+}
+
+.selfie-pic {
+  width: 200px;
+  height: 200px;
+}
