@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { Router, Route, browserHistory } from 'react-router'
 
 import './styles/App.css';
 
@@ -14,7 +14,7 @@ class App extends Component {
   render () {
 
     return (
-      <Router history={browserHistory} onUpdate={hashLinkScroll}>
+      <Router history={browserHistory}>
         <Route path='/' component={Container}>
           <Route path='/about' component={AboutMe} />
           <Route path='/skills' component={Skills} />
@@ -24,17 +24,6 @@ class App extends Component {
         </Route>
       </Router>
     )
-  }
-}
-
-function hashLinkScroll() {
-  const { hash } = window.location
-  if (hash !== '') {
-      setTimeout(() => {
-      const id = hash.replace('#', '')
-      const element = document.getElementById(id)
-      if (element) element.scrollIntoView()
-    }, 0)
   }
 }
 

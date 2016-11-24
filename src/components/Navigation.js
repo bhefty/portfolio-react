@@ -1,7 +1,22 @@
 import React, { Component } from 'react'
 import { IndexLink } from 'react-router'
 
+import Scroll from 'react-scroll'
+
+const Link       = Scroll.Link
+const Events     = Scroll.Events
+const scrollSpy  = Scroll.scrollSpy
+
 class Navigation extends Component {
+  componentDidMount() {
+    scrollSpy.update();
+  }
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
+
   render() {
     return (
       <div className='navbar navbar-default navbar-fixed-top'>
@@ -17,10 +32,10 @@ class Navigation extends Component {
           </div>
           <div className='navbar-collapse collapse' id='collapse-bar'>
             <ul className='nav navbar-nav navbar-right'>
-              <li><IndexLink className='active' to='#about'>About Me</IndexLink></li>
-              <li><IndexLink className='active' to='#skills'>Skills</IndexLink></li>
-              <li><IndexLink className='active' to='#projects'>Projects</IndexLink></li>
-              <li><IndexLink className='active' to='#contact'>Contact Me</IndexLink></li>
+              <li><Link activeClass='active' to='about' spy={true} smooth={true} offset={-80} duration={500}>About Me</Link></li>
+              <li><Link activeClass='active' to='skills' spy={true} smooth={true} offset={-80} duration={500}>Skills</Link></li>
+              <li><Link activeClass='active' to='projects' spy={true} smooth={true} offset={-80} duration={500}>Projects</Link></li>
+              <li><Link activeClass='active' to='contact' spy={true} smooth={true} offset={-80} duration={500}>Contact Me</Link></li>
             </ul>
           </div>
         </div>
