@@ -1,5 +1,5 @@
-.about-me {
-  margin: 80px auto 0 auto;
+.content {
+  margin: 80px auto 50px auto;
   font-size: 1em;
   max-width: 768px;
   text-align: center;
@@ -14,6 +14,9 @@
   color: #fff;
   background-color: #222;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .footer p {
   margin: auto;
@@ -31,4 +34,12 @@
 .selfie-pic {
   width: 200px;
   height: 200px;
+}
+
+.skill-badge {
+  height: 125px;
+}
+
+.project-img {
+  width: 125px
 }

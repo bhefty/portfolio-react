@@ -28,14 +28,14 @@ class Navigation extends Component {
               <span className='icon-bar'></span>
               <span className='icon-bar'></span>
             </button>
-              <IndexLink className='navbar-brand' to='about'>portfolio(BH)</IndexLink>
+              <Link className='navbar-brand' to='about' spy={true} smooth={true} offset={-80} duration={500}>portfolio(BH)</Link>
           </div>
           <div className='navbar-collapse collapse' id='collapse-bar'>
             <ul className='nav navbar-nav navbar-right'>
-              <li><Link activeClass='active' to='about' spy={true} smooth={true} offset={-80} duration={500}>About Me</Link></li>
-              <li><Link activeClass='active' to='skills' spy={true} smooth={true} offset={-80} duration={500}>Skills</Link></li>
-              <li><Link activeClass='active' to='projects' spy={true} smooth={true} offset={-80} duration={500}>Projects</Link></li>
-              <li><Link activeClass='active' to='contact' spy={true} smooth={true} offset={-80} duration={500}>Contact Me</Link></li>
+              <li data-toggle='collapse' data-target='#collapse-bar'><Link activeClass='active' to='about' spy={true} smooth={true} offset={-80} duration={500}>About Me</Link></li>
+              <li data-toggle='collapse' data-target='#collapse-bar'><Link activeClass='active' to='skills' spy={true} smooth={true} offset={-80} duration={500}>Skills</Link></li>
+              <li data-toggle='collapse' data-target='#collapse-bar'><Link activeClass='active' to='projects' spy={true} smooth={true} offset={-80} duration={500}>Projects</Link></li>
+              <li data-toggle='collapse' data-target='#collapse-bar'><Link activeClass='active' to='contact' spy={true} smooth={true} offset={-80} duration={500}>Contact Me</Link></li>
             </ul>
           </div>
         </div>
