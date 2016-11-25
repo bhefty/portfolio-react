@@ -19,6 +19,7 @@ class App extends Component {
           <Route path='/skills' component={Skills} />
           <Route path='/Projects' component={Projects} />
           <Route path='/Contact' component={Contact} />
+          <Route path='*' component={AboutMe} />
         </Route>
       </Router>
     )
