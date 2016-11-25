@@ -1,6 +1,6 @@
 This portfolio site was created using ReactJS and can be found at the following address:
 
-#[www.billhefty.com](https://billhefty.com)
+#[www.billhefty.com](https://www.billhefty.com)
 
 ##Contact Me
 - [GitHub](https://github.com/bhefty)
