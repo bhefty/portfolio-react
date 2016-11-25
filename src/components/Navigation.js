@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { IndexLink } from 'react-router'
 
 import Scroll from 'react-scroll'
 

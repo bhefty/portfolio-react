@@ -10,6 +10,7 @@ class Skills extends Component {
           I aim to be constantly improving upon my skillset by employing best practices in my code. I always strive to create clean user-friendly designs to achieve optimal interfaces which are a joy to use. Keeping up to date with the latest development practices
           and technologies, I'm able to design modern webpages that scale to all devices.
         </p>
+        <br/>
         <div className="row">
           <div className="col-xs-4">
             <img src="https://res.cloudinary.com/bhefty/image/upload/v1474930875/HTML5_Badge_512_a1mw6s.png" alt="HTML5" className="skill-badge" />
