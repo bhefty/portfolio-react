@@ -10,6 +10,7 @@ import TicTacToe from './projects/TicTacToe'
 import Wikipedia from './projects/Wikipedia'
 import Weather from './projects/Weather'
 import RandomQuote from './projects/RandomQuote'
+import RecipeBox from './projects/RecipeBox'
 
 class Projects extends Component {
   render() {
@@ -18,6 +19,8 @@ class Projects extends Component {
         <h1>Projects</h1>
         <hr className="hr-title" />
         <Portfolio />
+        <hr />
+        <RecipeBox />
         <hr />
         <Markdown />
         <hr />
